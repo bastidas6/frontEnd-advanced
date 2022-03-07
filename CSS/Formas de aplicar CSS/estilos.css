@@ -1,0 +1,13 @@
+h1{
+    color: yellow;
+}
+h2{
+    color: blueviolet;
+}
+p{
+    color: blue;
+    background-color: crimson;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px;
+}

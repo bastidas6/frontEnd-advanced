@@ -1,0 +1,27 @@
+h1{
+    color: #f07167;
+}
+
+/* Cuando esta el link por defecto aun no le hemos dado click */
+a:link{
+    color: #fb8500;
+    text-decoration: none; /* Para quitar el subrayado */
+}
+
+/* Cuando ya le dimos click al link */
+a:visited{ 
+    color: #219ebc;
+    text-decoration: none;
+}
+
+/* Cuando nos paramos encima del link */
+a:hover{
+    color: #8acae6;
+    text-decoration: underline; /* Si lo subraya */
+}
+
+/* Cuando le doy click en el  link */
+a:active{
+    color: #023047;
+    text-decoration: underline;
+}

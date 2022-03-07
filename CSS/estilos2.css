@@ -1,0 +1,9 @@
+/* Este formato de estilos lo vamos hacer con una paleta de colores*/
+
+h1{
+    color: #003049;
+}
+p{
+    border: 15px solid #d62828;
+    background-color: #eae2b7;
+}
