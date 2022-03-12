@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+div{
+    padding: 10px;
+    border: 15px solid #457b9d;
+    margin: 20px;
+    background-color: #f1faee;
+
+    /*Ancho total del elemento*/
+    max-width: 800px;
+
+    /*Espacio entre el padding y el borde */
+    outline: 10px solid #a8dadc;
+
+    /*Espacio siempre transparente entre el borde y el outline*/
+    outline-offset: 10px;
+
+    box-sizing: border-box;
+}
+
+p.interno{
+    /*Se hereda de donde este envuelto p, en este caso div es ele elemto padre y p el elemento hijo*/
+    margin-left: inherit;
+}
