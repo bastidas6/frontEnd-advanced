@@ -1,0 +1,6 @@
+body{
+    background-color: dodgerblue;
+    color: hsl(48, 100%, 93%);
+    background-image: url("/background/img/fondo.png");
+    background-size: cover;
+}
