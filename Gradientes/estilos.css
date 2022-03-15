@@ -1,0 +1,37 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    /*  Este es para hacer el fondo degradado pero lineal, de la parte superior a la parte inferior
+    background: linear-gradient(#f72585, #3a0ca3) */
+
+    /* Aqui va el degradado hacia la derecha 
+    background: linear-gradient(to right, #f72585, #3a0ca3);*/
+
+    /* Degradado con 3 colores y tiene la configuración por default que es de arriba hacia abajo 
+    background: linear-gradient(#24404d, #6dbff1, black);*/
+
+    /* Genera un efecto como si fuera en diagonal
+    background: linear-gradient(to bottom right, #f72585, #3a0ca3);  */
+
+    /* Sirve para ir invirtiendo el color del fondo por el angulo 
+    background: linear-gradient(145deg, #f72585, #3a0ca3);*/
+
+    background: radial-gradient(circle, #0d47a1, #42a5f5);
+    color: #f1faee;
+
+}
+
+H1{
+    text-align: center;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid#a8dadc;
+    padding: 15px;
+    text-align: center;
+}
