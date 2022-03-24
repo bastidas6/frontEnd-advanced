@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos onfocus y onblur</title>
+</head>
+<body>
+    <h1 id="titulo">Eventos onfocus y onblur</h1>
+    <br>
+    nombre: <input type="text" onfocus="cambiar_fondo(this)" onblur="regresar(this)">
+    <script>
+        function cambiar_fondo(elemento_input){
+            elemento_input.style.background = "yellow";
+        }
+
+        function regresar(elemento_input){
+            elemento_input.style.background = "white";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo formulario con JS</title>
+</head>
+<body>
+    <form id="formulario">
+        nombre: <input type="text" name="nombre" value="Juan">
+        <br>
+        apellido: <input type="text" name="apellido" value="Perez">
+        <br>
+    </form>
+
+    <button onclick="mostrar_valores()">Mostrar</button>
+    
+    <div id="valores"></div>
+
+    <script>
+        function mostrar_valores(){
+            let formulario = document.forms["formulario"];
+            let texto = "";
+
+            //Acceder a los elementos del formulario de manera individual
+            let nombre = formulario["nombre"];
+            let apellido = formulario["apellido"];
+            texto = nombre.value + "\n" + apellido.value;
+
+            //El ciclo for es para cceder a los elementos del formulario, pero a todos
+            //for(let elemento of formulario){
+            //    texto += elemento.value + "\n";
+            //}
+
+            //console.log(texto);
+            document.getElementById("valores").innerHTML = texto;
+        }
+    </script>
+</body>
+</html>

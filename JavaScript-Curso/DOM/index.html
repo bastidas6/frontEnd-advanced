@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <head>
+     <meta charset="UTF-8">
+     <title>Ejemplo DOM con JS</title>
+     <style>
+         .azul{
+             color: blue;
+         }
+     </style>
+ </head>
+ <body>
+     <h1 id="cabecero">Ejemplo DOM con JS..</h1>
+     <p id="parrafo">Saludos!</p>
+     <p id="parrafo2">Otro parrafo</p>
+     <p class="azul">Parrafo 1 para probar el getElementByClassName</p>
+     <p class="azul">Parrafo 2 para probar el getElementByClassName</p>
+     <script>
+
+         //Vamos acceder al texto del cabecero -- Forma 1
+         let cabecero = document.getElementById("cabecero").innerHTML; //El innerHTML accedemos al texto del elemento html
+         console.log("Valor cabecero: " + cabecero)
+
+         //Vamos acceder al texto del parrafo -- Forma 2
+         let parrafo = document.getElementById("parrafo");
+         console.log("El texto del parrafo es: " + parrafo.innerHTML);
+
+         //Modificando el texto del titulo
+         //cabecero.innerHTML = "Cambio de cabecero";
+         //console.log("..")
+
+         //Modificando el contenido del parrafo
+         //parrafo.innerHTML = "Se cambio el parrafo";
+         //console.log("El nuevo contenido del parrafo es:" + parrafo.innerHTML);
+
+         //Saber el numero de parrafos con la etiqueta ByTagName
+         let parrafos = document.getElementsByTagName("p"); //Me trae todos los elementos de tipo parrafo
+         console.log(`Numero de parrafos: ${parrafos.length}`);
+         for(let i = 0; i < parrafos.length; i++){
+             console.log(`i: ${i} - ${parrafos[i].innerHTML}`);
+         }
+
+         //Probando la etiqueta byTagClassName
+         let elementos_clase_azul = document.getElementsByClassName("azul");
+         console.log("Los elementos que tienen la clase azul son: " + elementos_clase_azul.length);
+         
+     </script>
+ </body>
+ </html>
